@@ -1,0 +1,48 @@
+@media (max-width: 576px) {
+
+    /* Hamburger Menu */
+    .navbar ul{
+        width: 100%;
+        height:calc(100vh - 60);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #282828;
+        display: none;
+    }
+
+    .navbar i{
+        display: block;
+    }
+
+    #toggle-menu:checked ~ .navbar-list{
+        display: flex;
+    }
+
+    .navbar a{
+        color: white;
+    }
+
+    .section-title-sign-up{
+        font-size: 1.5rem;
+    }
+}
+
+
+@media (min-width: 775px){
+    .about-me-container{
+        flex-direction: row;
+        
+    }
+}
+
+
+
+@media (min-width: 577px){
+    .recent-post-container{
+        flex-direction: row;
+    }
+}
